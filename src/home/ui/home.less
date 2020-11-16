@@ -1,0 +1,63 @@
+@import '../../assets//style/var.less';
+.home-wrap{
+    background-color: #eee;
+   
+    .nav-wrap{
+        background-color: #001529;
+        height: 100vh;
+        h2{
+            background-color: #002140;
+            color: rgb(233, 230, 230);
+            text-align: center;
+            line-height: 90px;
+            height: 90px;
+        }
+    }
+    .main-wrap{
+        height: 100vh;
+        overflow: auto;
+        header{
+            background-color: #fff;
+            .header-top{
+                padding: 0 20px;
+                height: 60px;
+                line-height: 60px;
+                border-bottom: 1px solid @theme-color;
+            }
+            .header-bottom{
+                padding: 0 20px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                .header-title{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        top: 100%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        border: 10px solid;
+                        border-color: white transparent transparent;
+                    }
+                }
+               
+                .time{
+                    text-align: right;
+                }
+            }
+        }
+        main{
+            margin: 20px;
+            
+        }
+        footer{
+            height: 100px;
+            padding: 40px 0;
+            text-align: center;
+            color: @light-color;
+        }
+    }
+}

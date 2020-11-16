@@ -1,0 +1,59 @@
+.home-wrap {
+  background-color: #eee;
+}
+.home-wrap .nav-wrap {
+  background-color: #001529;
+  height: 100vh;
+}
+.home-wrap .nav-wrap h2 {
+  background-color: #002140;
+  color: #e9e6e6;
+  text-align: center;
+  line-height: 90px;
+  height: 90px;
+}
+.home-wrap .main-wrap {
+  height: 100vh;
+  overflow: auto;
+}
+.home-wrap .main-wrap header {
+  background-color: #fff;
+}
+.home-wrap .main-wrap header .header-top {
+  padding: 0 20px;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #ff4d4f;
+}
+.home-wrap .main-wrap header .header-bottom {
+  padding: 0 20px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.home-wrap .main-wrap header .header-bottom .header-title {
+  position: relative;
+}
+.home-wrap .main-wrap header .header-bottom .header-title::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: white transparent transparent;
+}
+.home-wrap .main-wrap header .header-bottom .time {
+  text-align: right;
+}
+.home-wrap .main-wrap main {
+  margin: 20px;
+}
+.home-wrap .main-wrap footer {
+  height: 100px;
+  padding: 40px 0;
+  text-align: center;
+  color: #bbb;
+}
